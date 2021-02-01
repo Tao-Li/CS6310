@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-02-01T03:42:18.286Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="8FaKapskYhmj_Qq2mKMf" version="14.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-01T03:56:14.000Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36" etag="3AHeuFyDuAZM4GSfqk7y" version="14.2.7" type="github">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
-    <mxGraphModel dx="2804" dy="1584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1200" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1986" dy="1122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1200" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -282,7 +282,7 @@
           <mxGeometry y="138" width="260" height="26" as="geometry" />
         </mxCell>
         <mxCell id="RB8M7852OnO0VKGK0Mt7-157" value="Transaction_PPV" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;comic=0;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=10;html=1;rotation=0;" parent="1" vertex="1">
-          <mxGeometry x="670" y="599" width="285" height="136" as="geometry" />
+          <mxGeometry x="670" y="599" width="285" height="212" as="geometry" />
         </mxCell>
         <mxCell id="VTc43u0lsEVK36tplCj_-9" value="\ fee: Money" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotation=0;" vertex="1" parent="RB8M7852OnO0VKGK0Mt7-157">
           <mxGeometry y="26" width="285" height="26" as="geometry" />
@@ -290,14 +290,20 @@
         <mxCell id="RB8M7852OnO0VKGK0Mt7-158" value="- StreamingService_short_name:string" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotation=0;" parent="RB8M7852OnO0VKGK0Mt7-157" vertex="1">
           <mxGeometry y="52" width="285" height="26" as="geometry" />
         </mxCell>
+        <mxCell id="VTc43u0lsEVK36tplCj_-12" value="\ license_fee: Money" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotation=0;" vertex="1" parent="RB8M7852OnO0VKGK0Mt7-157">
+          <mxGeometry y="78" width="285" height="26" as="geometry" />
+        </mxCell>
         <mxCell id="RB8M7852OnO0VKGK0Mt7-162" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;rotation=0;" parent="RB8M7852OnO0VKGK0Mt7-157" vertex="1">
-          <mxGeometry y="78" width="285" height="8" as="geometry" />
+          <mxGeometry y="104" width="285" height="8" as="geometry" />
         </mxCell>
         <mxCell id="RB8M7852OnO0VKGK0Mt7-201" value="CalculateFee(StreamingService S): Money&#xa;return S.rate_PPV[televisedevent_name]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotation=0;" parent="RB8M7852OnO0VKGK0Mt7-157" vertex="1">
-          <mxGeometry y="86" width="285" height="50" as="geometry" />
+          <mxGeometry y="112" width="285" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VTc43u0lsEVK36tplCj_-14" value="CalculateLicenseFee(Studio S): Money&#xa;return S.getPrice(string)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotation=0;" vertex="1" parent="RB8M7852OnO0VKGK0Mt7-157">
+          <mxGeometry y="162" width="285" height="50" as="geometry" />
         </mxCell>
         <mxCell id="RB8M7852OnO0VKGK0Mt7-164" value="Transaction_Movie" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;comic=0;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=10;html=1;" parent="1" vertex="1">
-          <mxGeometry x="970" y="440" width="290" height="126" as="geometry" />
+          <mxGeometry x="970" y="440" width="290" height="192" as="geometry" />
         </mxCell>
         <mxCell id="RB8M7852OnO0VKGK0Mt7-165" value="\ fee: Money" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="RB8M7852OnO0VKGK0Mt7-164" vertex="1">
           <mxGeometry y="26" width="290" height="26" as="geometry" />
@@ -305,11 +311,17 @@
         <mxCell id="VTc43u0lsEVK36tplCj_-10" value="- StreamingService_short_name:string" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotation=0;" vertex="1" parent="RB8M7852OnO0VKGK0Mt7-164">
           <mxGeometry y="52" width="290" height="26" as="geometry" />
         </mxCell>
+        <mxCell id="VTc43u0lsEVK36tplCj_-13" value="\ license_fee: Money" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="RB8M7852OnO0VKGK0Mt7-164">
+          <mxGeometry y="78" width="290" height="26" as="geometry" />
+        </mxCell>
         <mxCell id="RB8M7852OnO0VKGK0Mt7-169" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="RB8M7852OnO0VKGK0Mt7-164" vertex="1">
-          <mxGeometry y="78" width="290" height="8" as="geometry" />
+          <mxGeometry y="104" width="290" height="8" as="geometry" />
         </mxCell>
         <mxCell id="RB8M7852OnO0VKGK0Mt7-170" value="CalculateFee(StreamingService S): Money&#xa;return S.rate_Movie" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="RB8M7852OnO0VKGK0Mt7-164" vertex="1">
-          <mxGeometry y="86" width="290" height="40" as="geometry" />
+          <mxGeometry y="112" width="290" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTc43u0lsEVK36tplCj_-15" value="CalculateLicenseFee(Studio S): Money&#xa;return S.getPrice(string)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="RB8M7852OnO0VKGK0Mt7-164">
+          <mxGeometry y="152" width="290" height="40" as="geometry" />
         </mxCell>
         <mxCell id="RB8M7852OnO0VKGK0Mt7-181" value="" style="endArrow=block;html=1;rounded=0;align=center;verticalAlign=bottom;endFill=0;labelBackgroundColor=none;endSize=8;fontFamily=Verdana;fontSize=10;entryX=0.528;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="RB8M7852OnO0VKGK0Mt7-153" edge="1">
           <mxGeometry relative="1" as="geometry">
